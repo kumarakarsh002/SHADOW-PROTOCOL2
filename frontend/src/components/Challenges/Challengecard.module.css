@@ -1,0 +1,80 @@
+.challengescard{
+    /* border: 2px solid green; */
+    margin: 0px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #161B20 0%, #181E24 50%, #1E252C 100%);
+    overflow: hidden;
+}
+
+.challengescardupper{
+    /* border: 2px solid saddlebrown; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.challengescardupperlogo{
+    border: 2px solid cyan;
+    margin-left: 5%;
+    width: 45px;
+    height: 45px;
+}
+
+.challengescardupperbounty{
+    margin-right: 5%;
+    text-align: right;
+    
+    p{
+        font-size: 12px;
+    }
+    h1{
+        font-family: "Share Tech Mono", monospace;
+        color: cyan;
+    }
+}
+
+.challengescardlower{
+    /* border: 2px solid gold; */
+    width: 100%;
+    height: 65%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    p{
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Share Tech Mono", monospace;
+        background: black;
+        padding: 1% 2%;
+        margin-bottom: 2%;
+        border-radius: 15px;
+    }
+    h2{
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 500;
+        color: #F0F3F5;
+        margin-bottom: 2%;
+    }
+    h4{
+        font-weight: 100;
+    }
+    
+    
+}
+.challengescardlowerparagraph{
+    /* border: 2px solid green; */
+    height: 10%;
+    display: flex;
+    align-items: center;
+    p{  
+        color: wheat;
+        margin-left: 5%;
+        font-size: 13px;
+        font-family: "Share Tech Mono", monospace;
+        /* background: transparent; */
+    }
+}
