@@ -1,26 +1,42 @@
 import React from 'react'
 import styles from './Challengecard.module.css';
+import { FaLeaf } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { MdOutlineHub } from "react-icons/md";
+import { PiCodesandboxLogo } from "react-icons/pi";
+
+const iconMap = {
+    FaLeaf: FaLeaf,
+    LuBrainCircuit: LuBrainCircuit,
+    MdOutlineHub: MdOutlineHub,
+    PiCodesandboxLogo: PiCodesandboxLogo
+    };
 
 
-const Challengecard = () => {
+const Challengecard = ({icon, amount, poweredby, heading, paragraph, studentno, color}) => {
+    const Icon = iconMap[icon];
+    
+    
     return (
         <div className={styles.challengescard}>
             <div className={styles.challengescardupper}>
-                <img className={styles.challengescardupperlogo} src='' alt='Nothing' />
+                <div className={styles.challengescardupperlogo}>
+                    {Icon && <Icon style={{color: color}}/>}
+                </div>
                 <div className={styles.challengescardupperbounty}>
-                    <p>TRACK BOUNTY</p>
-                    <h1>₹25,000</h1>
+                    <p>PARTICIPANT FEES</p>
+                    <h1 style={{color: color}}>₹{amount}</h1>
                 </div>
 
             </div>
             <div className={styles.challengescardlower}>
-                <p>POWERED BY OPENAI & ANTHROPIC</p>
-                <h2>Autonomous AI & LLM Systems</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore magnam atque explicabo totam deleniti culpa distinctio perferendis molestias, nesciunt debitis at inventore quidem nihil sapiente esse error? Pariatur consequatur ea deleniti in mollitia, quas esse?</h4>
+                <p style={{color: color}}>{poweredby}</p>
+                <h2>{heading}</h2>
+                <h4>{paragraph}</h4>
 
             </div>
             <div className={styles.challengescardlowerparagraph}>
-                <p>1,240 Hacker Candidate</p>
+                <p>{studentno} Student Candidate</p>
             </div>
         </div>
     )

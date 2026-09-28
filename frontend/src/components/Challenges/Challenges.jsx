@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../Challenges/Challenges.module.css'
 import Challengecard from './Challengecard'
-
+import Challengesfile from '../../../data/main/challenges.json'
 
 const Challenges = () => {
   return (
@@ -16,10 +16,16 @@ const Challenges = () => {
             </div>
         </div>
         <div className={styles.Challengesfooter}>
+            {Challengesfile.map((challenge) =>{
+                return(
+                    <Challengecard key={challenge.id} icon={challenge.icon} amount={challenge.amount} heading={challenge.heading} paragraph={challenge.paragraph} poweredby={challenge.poweredby} studentno={challenge.studentno} color={challenge.color}/>
+                )
+            })}
+
+            {/* <Challengecard />
             <Challengecard />
             <Challengecard />
-            <Challengecard />
-            <Challengecard />
+            <Challengecard /> */}
         </div>
     </div>
   )

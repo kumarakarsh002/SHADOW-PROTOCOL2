@@ -1,6 +1,47 @@
 [
     {
-        "id": 1
+        "id": 1,
+        "icon": "LuBrainCircuit",
+        "amount": 100,
+        "poweredby": "POWERED BY OPENAI & ANTHROPIC",
+        "heading": "Autonumous AI & LLM System",
+        "paragraph": "Develop multi - agent",
+        "studentno": 150,
+        "color": "cyan"
+
+    },
+    {
+        "id": 2,
+        "icon": "MdOutlineHub",
+        "amount": 100,
+        "poweredby": "POWERED BY AKARSH KUMAR",
+        "heading": "Autonumous AI & LLM System",
+        "paragraph": "Develop multi - agent",
+        "studentno": 150,
+        "color": "#C2C1FF"
+
+    },
+    {
+        "id": 3,
+        "icon": "PiCodesandboxLogo",
+        "amount": 100,
+        "poweredby": "POWERED BY OPENAI & ANTHROPIC",
+        "heading": "Autonumous AI & LLM System",
+        "paragraph": "Develop multi - agent",
+        "studentno": 240,
+        "color": "#BDFFF4"
+
+    },
+    {
+        "id": 4,
+        "icon": "FaLeaf",
+        "amount": 100,
+        "poweredby": "POWERED BY OPENAI & ANTHROPIC",
+        "heading": "Autonumous AI & LLM System",
+        "paragraph": "Develop multi - agent",
+        "studentno": 50,
+        "color": "cyan"
 
     }
+    
 ]
