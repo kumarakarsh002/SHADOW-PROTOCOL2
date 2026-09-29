@@ -1,7 +1,7 @@
 /* Details */
 .details{
     /* border: 1px solid green; */
-    width: 90%;
+    width: 80%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@
     padding: 2%;
 }
 .venueleft{
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
     flex: 1;
     padding-top: 3%;
     padding-left: 2%;
@@ -60,7 +60,7 @@
 }
 
 .venueleftbottom{
-    border: 1px solid saddlebrown;
+    /* border: 1px solid saddlebrown; */
     margin-top: 5%;
     height: 35%;
     display: flex;
