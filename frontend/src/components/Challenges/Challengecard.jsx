@@ -6,10 +6,10 @@ import { MdOutlineHub } from "react-icons/md";
 import { PiCodesandboxLogo } from "react-icons/pi";
 
 const iconMap = {
-    FaLeaf: FaLeaf,
-    LuBrainCircuit: LuBrainCircuit,
-    MdOutlineHub: MdOutlineHub,
-    PiCodesandboxLogo: PiCodesandboxLogo
+    FaLeaf,
+    LuBrainCircuit,
+    MdOutlineHub,
+    PiCodesandboxLogo
     };
 
 
@@ -36,7 +36,7 @@ const Challengecard = ({icon, amount, poweredby, heading, paragraph, studentno, 
 
             </div>
             <div className={styles.challengescardlowerparagraph}>
-                <p>{studentno} Student Candidate</p>
+                <p>{studentno} Registered Student Candidate</p>
             </div>
         </div>
     )
